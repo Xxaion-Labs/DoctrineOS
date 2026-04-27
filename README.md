@@ -22,6 +22,47 @@ This public baseline was developed to solve real problems with AI interaction: d
 - Maintain **stability and scope control** across interactions
 - Enable **anti-drift** through explicit state truth, proof contracts, regeneration rules, and direct user correction as canonical mutation
 
+## Quick Start
+
+```bash
+git clone https://github.com/Xxaion-Labs/doctrine-protocol.git
+cd doctrine-protocol
+pip install -e .
+```
+
+Mount the standard public doctrine:
+
+```bash
+doctrine mount standard_public_template.doctrine
+```
+
+Validate the example node:
+
+```bash
+doctrine validate nodes/example.md
+```
+
+Build the public node registry:
+
+```bash
+doctrine registry build
+```
+
+Use the SDK directly:
+
+```python
+from doctrine import Doctrine
+
+# Mount the standard public template. Extensionless load also resolves .doctrine files.
+doctrine = Doctrine.load("standard_public_template")
+receipt = doctrine.mount()
+print(receipt["instruction_context"])
+
+# Create and mount a custom node.
+node = Doctrine("custom", "MyBehaviorNode", "node-id")
+node.mount()
+```
+
 ## The Standard Public Doctrine
 
 The core file is **`standard_public_template.doctrine`** (in the repository root). It defines these 12 Laws:
@@ -46,41 +87,10 @@ It also includes a **Structured Authority Kernel**, state truth ladder, anti-dri
 - Reusable concept nodes and doctrine files
 - Simple mounting mechanism to apply rules to any LLM
 - Python SDK (`from doctrine import Doctrine`)
+- CLI command (`doctrine`)
 - Model-agnostic design (local or cloud)
 - Proof-oriented architecture (state manifests, verification, rollback)
 - Apache 2.0 — fully permissive for commercial and community use
-
-## Quick Start
-
-```bash
-git clone https://github.com/Xxaion-Labs/doctrine-protocol.git
-cd doctrine-protocol
-```
-
-```python
-from doctrine import Doctrine
-
-# Mount the standard public template
-doctrine = Doctrine.load("standard_public_template")
-doctrine.mount()
-
-# Create and mount a custom node
-node = Doctrine("custom", "MyBehaviorNode", "node-id")
-node.mount()
-```
-
-See `examples/` and `sdk/` for more.
-
-## Why This Matters
-
-Unstructured AI prompts lead to drift and loss of control. Doctrine Protocol turns that into structured, mountable governance — a practical constitution for user-sovereign AI. It establishes clear behavioral boundaries and reduces cognitive load.
-
-**Key differentiators:**
-
-- Explicit rejection of AI sentience or autonomy theater
-- Built-in mechanisms to reduce cognitive load (especially valuable under stress or for neurodivergent users)
-- Anti-drift and stability laws for consistency across sessions and models
-- Proof contract and state truth ladder for verifiable behavior
 
 ## Repository Structure
 
@@ -88,6 +98,17 @@ Unstructured AI prompts lead to drift and loss of control. Doctrine Protocol tur
 - `nodes/` — Concept nodes
 - `sdk/` — Python mounting library
 - `tools/` — Validation and helper tools
+- `tests/` — SDK smoke tests
+- `registry/` — Generated public node registry
+
+## Development
+
+```bash
+pip install -e . pytest
+python -m pytest
+python tools/validate_nodes.py
+python tools/build_registry.py
+```
 
 ## Roadmap
 
