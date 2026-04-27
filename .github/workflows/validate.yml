@@ -1,0 +1,28 @@
+name: Validate Doctrine Protocol
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install package
+        run: pip install -e . pytest
+
+      - name: Run tests
+        run: python -m pytest
+
+      - name: Validate nodes
+        run: python tools/validate_nodes.py
+
+      - name: Build registry
+        run: python tools/build_registry.py
