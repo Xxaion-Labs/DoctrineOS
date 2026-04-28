@@ -1,3 +1,5 @@
+♾️Free and Open Source Forever♾️
+
 ## Doctrine Protocol
 
 [![Validate Doctrine Protocol](https://github.com/Xxaion-Labs/doctrine-protocol/actions/workflows/validate.yml/badge.svg)](https://github.com/Xxaion-Labs/doctrine-protocol/actions/workflows/validate.yml)
