@@ -1,10 +1,12 @@
-# DoctrineOS Prototype Shell
+# Prototype Shell
 
-The DoctrineOS prototype shell is the first runnable operating surface for the DoctrineOS direction.
+The DoctrineOS prototype shell is the first runnable operating surface for DoctrineOS.
 
-It proves the control spine before any full desktop, distro, or kernel-level integration.
+It proves the control spine before a full desktop, distro, or kernel-level integration.
 
 ## Run
+
+Start the interactive shell:
 
 ```bash
 doctrineos
@@ -36,7 +38,7 @@ The shell can:
 - mount the doctrine profile
 - emit mount-aware action receipts
 - accept user commands
-- plan the command intent
+- plan command intent
 - identify needed capabilities
 - ask permission for capability use
 - route approved commands to safe stub adapters
@@ -64,4 +66,4 @@ Action receipts are written under:
 .doctrineos/receipts/
 ```
 
-This is an early prototype. It is intentionally small, inspectable, and safe by default.
+This prototype is intentionally small, inspectable, and safe by default.

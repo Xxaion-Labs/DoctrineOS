@@ -1,6 +1,6 @@
 ---
 name: Adapter request
-about: Request an example or adapter for using mounted doctrine in a tool or workflow
+about: Request an example or adapter for using mounted doctrine in a tool, workflow, or DoctrineOS runtime surface
 title: "adapter: "
 labels: adapter request
 ---
@@ -18,8 +18,8 @@ Example: `.doctrine` file, concept node, mounted receipt, instruction context.
 
 ## Expected output
 
-Example: prompt context, local model wrapper, API payload, file export.
+Example: prompt context, local model wrapper, API payload, file export, runtime adapter.
 
-## Notes
+## Public hygiene check
 
-Please avoid including secrets, API keys, private prompts, or personal data.
+Please avoid including secrets, API keys, credentials, sensitive material, non-public material, or personal data.

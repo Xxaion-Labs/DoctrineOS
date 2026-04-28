@@ -1,8 +1,10 @@
-# DoctrineOS Architecture Seed
+# Architecture
 
-DoctrineOS is a whole-system direction, not a single assistant feature.
+DoctrineOS is a doctrine-native AI operating system prototype.
 
-## Layer Model
+It begins as a userland runtime on an open base system and grows toward a bootable, AI-native operating environment.
+
+## Layer model
 
 ```text
 DoctrineOS
@@ -26,19 +28,27 @@ DoctrineOS
    └─ the human remains root authority
 ```
 
-## First Build Target
+## Current control spine
+
+The current prototype proves this spine:
+
+```text
+doctrine profile -> mount -> command -> capability -> permission -> adapter -> receipt -> state
+```
+
+## First build target
 
 The first practical target is not a custom kernel.
 
 The first target is a doctrine-native userland running on an open base system:
 
-1. bootable environment later
-2. local command shell first
-3. doctrine mounting before automation
-4. receipts before trust
-5. user authority before autonomy
+1. local command shell first
+2. doctrine mounting before automation
+3. receipts before trust
+4. user authority before autonomy
+5. bootable environment later
 
-## Operating Principles
+## Operating principles
 
 - The OS must be user-governed.
 - The AI layer must remain non-autonomous.
@@ -48,17 +58,17 @@ The first target is a doctrine-native userland running on an open base system:
 - Doctrine must be mountable, composable, and verifiable.
 - Public code must remain open under AGPLv3-or-later.
 
-## First Milestone
+## Current milestone
 
-Create a minimal DoctrineOS shell that can:
+DoctrineOS currently has a minimal shell that can:
 
 - load a doctrine profile
 - mount it
-- emit a receipt
+- emit receipts
 - accept user commands
 - route commands to safe stub adapters
 - log actions
 - show state
 - refuse unpermissioned actions
 
-This proves the OS control spine before attempting a full desktop or kernel-level integration.
+This proves the operating control spine before full desktop or kernel-level integration.
