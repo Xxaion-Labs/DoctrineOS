@@ -1,0 +1,516 @@
+{
+  "compiled_count": 56,
+  "created_at_utc": "2026-05-01T00:17:36.424650Z",
+  "failure_count": 0,
+  "failures": [],
+  "ok": true,
+  "ok_count": 56,
+  "receipt_id": "PUBLIC_DOCTRINE_L1_DOCTOR",
+  "receipt_sha256": "ed2e90911221afedb805ea42334a75922f7a5e8304f1b4162896e46fddaeaa00",
+  "results": [
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/ARCHITECTURE.md.doctrine",
+      "sha256": "2ec0acc8aa0b90d8a7bef1394da238fe1493b75b156c05b701536f3cd2d4771c"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/CHANGELOG.md.doctrine",
+      "sha256": "5d003eb2cbb1fbb5c2ac1a0388529324ddceb30a0d4ed449510e8b0f468c225e"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/COMPATIBILITY.md.doctrine",
+      "sha256": "8e10578150d8cc638363886a79940c3b2af418c41f6fb6d9d1ca47e6a75e1617"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/CONTRIBUTING.md.doctrine",
+      "sha256": "b91c615bf9555c9ed7d2145da828ce6e33682276a8309a6996672eea61d3560d"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/DOCTRINE_FILETYPE_V1.md.doctrine",
+      "sha256": "9c4660aafe9c56f60260a2bf606067844c7fe6e20b86a34afae886d05ea24b9d"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/DOCTRINE_NATIVE_FILETYPE.md.doctrine",
+      "sha256": "03da3dd24fe3a2db7a2ce73b5558359e6cd51b7a11431c8ccde8943e98e31994"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/LICENSE.doctrine",
+      "sha256": "8511c3869fa2e0ab988beb9164439ce15645fe07c3da55223dc22cc21878a050"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/NOTICE.doctrine",
+      "sha256": "8897ee3bdf3008c5da26227f4ce43763e184056c6599723d7c02e44fa611b82d"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/README.md.doctrine",
+      "sha256": "bf69da3d8c87bd8f76ee6b8e613de63f0f3d75800740ef4ac9ffa38492e708be"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/ROADMAP.md.doctrine",
+      "sha256": "6310e54e6fbb1ae06e59d8174b1387f7a223724221eb1da6803d74a723c6fc77"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/SPEC.md.doctrine",
+      "sha256": "ca35df1dcf99498a7227e325de39dca7b9ed33ed77f96092870086ccedf90806"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/VISION.md.doctrine",
+      "sha256": "1949134141093bcf2f2c435c06cad0de81f8e797f8f7124808f279e468f35636"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/docs__capabilities.md.doctrine",
+      "sha256": "92d1cef9461ee7baa4806b9e79d2c04994ec8fda731b22604730653275202228"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/docs__prototype-shell.md.doctrine",
+      "sha256": "59f802b9d9c77fe5c580ef42c1bf381577b2fd37d838ac412bc0bf903ad2d091"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/doctrineos____init__.py.doctrine",
+      "sha256": "2bfcb21891102385dcc7e68832fc4795578164689f420822294d5317606a875e"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/doctrineos__adapters____init__.py.doctrine",
+      "sha256": "f1f3fb2af1833c103d855435dddb7da11781a6c608b9f44eadd34e38a25aec24"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/doctrineos__adapters__stub.py.doctrine",
+      "sha256": "c9f83af3bc52a8f36c3a07aa6971945e6ac41b4b24715d7a7b985caa9d272984"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/doctrineos__capabilities.py.doctrine",
+      "sha256": "bf4534cf5a778655463f97c02a7ac39fd3e4dd96f674e3806e60456ffd6edcec"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/doctrineos__capability_kernel.py.doctrine",
+      "sha256": "ed445f22f169ba93b5801963f63f222439502b78c725bf92f1813dbb151914b8"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/doctrineos__policy.py.doctrine",
+      "sha256": "d1e723c528a5f775f1063f04c39f7d5ccfd3a3fbdf5887e27005691e9fc8ba34"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/doctrineos__profile.py.doctrine",
+      "sha256": "05518bb169ae6e948f330cf2c0b7fbea1f3190c935c4b0f291ebab65a1e8ec2b"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/doctrineos__receipts.py.doctrine",
+      "sha256": "b767030dae14b4c9ae52cfb36428c833e7cd2b671bced4532f4e6d728e9930e3"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/doctrineos__runtime.py.doctrine",
+      "sha256": "ae57bde6c4b3785e6ae97f0a415bc98efcdd2364102f9a32922d8b8ce114e23f"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/doctrineos__shell.py.doctrine",
+      "sha256": "c7b90b32c90eb11597b07e13076a361947ece5499f227e8ab18926589676aa0e"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/doctrineos__state.py.doctrine",
+      "sha256": "b3538d10ca17aea069a54c2990186e9b9c92e058d621e90cf937b27199768449"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/examples__README.md.doctrine",
+      "sha256": "89905a5c0090795bcab43ced83a92c95ad9fd40795fcbb2c6a1316d8b52d6c56"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/examples__api_payload_adapter.py.doctrine",
+      "sha256": "c1d0c336a9dbff94cf56e9ceb1ba8282d81efb5557be2f05e6f4561701ed2187"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/examples__local_model_prompt.py.doctrine",
+      "sha256": "19db3e73695dc5a371fc9b17fd98c3d91bf37ff182395fa7800f7b508c22e256"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/examples__mount_standard_template.py.doctrine",
+      "sha256": "5a1e2cdb212d8e0fc789381d6030ed11babf21d610ff68ad15d5ffec1df15d54"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/examples__prompt_context_export.py.doctrine",
+      "sha256": "b8b039894ecc9ed963d763492c952c0492e3d415b05353f027bdd64ec8737c09"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/nodes__README.md.doctrine",
+      "sha256": "bb2ad6ec42ff8621f3afd9be17fac9f3621aa98698fa960d367310713da0914b"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/nodes__anti-drift.md.doctrine",
+      "sha256": "74b73521d4ebb0b999a50191fdadb0e393d92f69c6fd9a732f49f4cf1526881b"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/nodes__clarity.md.doctrine",
+      "sha256": "d1ca3817bb61ae8254ff00290ef0da53e59b55a03e20ac64315ca78ae62faf2d"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/nodes__concise-response.md.doctrine",
+      "sha256": "5395471881d969f9d829fd7251677c26d2c252c7f6a0abaff14a3643ed592179"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/nodes__example.md.doctrine",
+      "sha256": "72f3a2258d0983e34ca7178a6f78c18868f26008311ea1841eb0f1c78807eb54"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/nodes__safety-boundary.md.doctrine",
+      "sha256": "baaee80c8fb85f1444bf1c69565fd1ea0534df0e86da24f4ba5222dc491133ab"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/nodes__user-authority.md.doctrine",
+      "sha256": "5334b8f1dc1609fe6ef63a245ed0c0a3c78bf4e29e0072695315df021e2a7d51"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/profiles__default.doctrine.doctrine",
+      "sha256": "f955653dc3e32b7ddc9c1a70f1c2d87c2f18300d22b327021a93e09e99d2cc21"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/pyproject.toml.doctrine",
+      "sha256": "193931344b689f7fce96e81521f554347bc1b1d1f8ade9772450ccec7f74e478"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/registry__index.json.doctrine",
+      "sha256": "fd27e7cff2ffc74c84661015acc2f1a1254a8c62467078c1cd6c12b7bf7f5225"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/sdk____init__.py.doctrine",
+      "sha256": "c761164a9e91b7573b178282e586ce7ee879bac567f91df12570c092bf6a87cb"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/sdk__cli.py.doctrine",
+      "sha256": "85761483aca1e1bec488fa447e338a6e74be40441cd383cbb0610d07a4d9cb7f"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/sdk__doctrine.py.doctrine",
+      "sha256": "015d8b5a6b0d6c1dd0c1455c077185fd45721e607b5a7e72c82972673f57cd12"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/sdk__mount.py.doctrine",
+      "sha256": "350c5b56a4e8360869a1fea27ed1895d3ff1e9a89974d69af27f3c81dba4ed39"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/sdk__parser.py.doctrine",
+      "sha256": "a064df69aa968601b49c0fcaf02d52ee7a63d5667a3aa37efeca79dd84596d8f"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/sdk__validator.py.doctrine",
+      "sha256": "f0201b0f1c065a2595e06c2696f51f70b5a9722dfbc72af3ac7829f1f6bd54f7"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/standard_public_template.doctrine.doctrine",
+      "sha256": "cd4f93f4adbb852877bca819c5282653cfe418901b893f75e24762e502338c37"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/tests__test_capability_kernel.py.doctrine",
+      "sha256": "8fad357981f3d5dc28718924b4ac41ba086ca9d66eb527f0833ddebf50a465e6"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/tests__test_doctrine.py.doctrine",
+      "sha256": "955a78b86434549f7236e59bea25aff954101eeb829c152123ff7c5a62851af8"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/tests__test_doctrineos_shell.py.doctrine",
+      "sha256": "7d186146dc67832900c89ba44d420a138682648727d2e57af7d0d5199331b411"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/tests__test_examples.py.doctrine",
+      "sha256": "b98c0bb760bdbe69298a1a76d16f56d858ea2edd9d34507e4a29ca1205a3ea23"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/tools__build_registry.py.doctrine",
+      "sha256": "bab6db02a14bd0af52f10f871e3f4bf5b103483b5efaf30881ba5ce94adda1eb"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/tools__check_registry.py.doctrine",
+      "sha256": "cc703093f3e0161026ee24814fcde7306a48c6b7c28f55a920a6743e0f8994e7"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/tools__node_files.py.doctrine",
+      "sha256": "e9f4fab014f4f9addb52abe138c65d2d902ceb15db93bb0b34c5c2be5f9a3b21"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/tools__validate.py.doctrine",
+      "sha256": "e7f9001b9b11c7f87215bef4530313a39256f0c7f40f1c304f76fe19f7d3df4e"
+    },
+    {
+      "certificate_hash_matches": true,
+      "errors": [],
+      "json_ok": true,
+      "missing": [],
+      "ok": true,
+      "path": ".doctrine-index/tools__validate_nodes.py.doctrine",
+      "sha256": "cd12fc5cad1e7a72c13c39b15aa224704be9575c8452f813669d3149cbc73a35"
+    }
+  ]
+}

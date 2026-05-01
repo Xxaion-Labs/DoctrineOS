@@ -1,0 +1,92 @@
+DOCTRINE FILE
+version: 1.0.0
+body_id: public_doctrine_l1_77194c28951747c2
+schema_version: public_doctrine_l1_index_v1
+record_type: public_repo_file_companion
+source_path: tools/build_registry.py
+source_sha256: 77194c28951747c2b34fcb08d55f303767f307379aa91bf13d48152d1ffd9212
+projection_class: public_safe_index
+validation_state: generated_unverified
+
+# Public Doctrine L1 Companion — `tools/build_registry.py`
+
+## Definition
+Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
+
+## Usage
+Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing private implementation payload.
+
+## ID
+public_doctrine_l1_77194c28951747c2
+
+## Claims supported
+
+```text
+source path recorded
+source SHA-256 recorded
+source file preserved in place
+public-safe L1 companion envelope generated
+```
+
+## Claims not supported
+
+```text
+semantic extraction complete
+private Xxen.soul payload present
+public release beyond repository contents approved
+```
+
+<<<PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
+{
+  "companion_path": ".doctrine-index/tools__build_registry.py.doctrine",
+  "compiled_at_utc": "2026-05-01T00:17:36.357013Z",
+  "record_id": "public_doctrine_l1_77194c28951747c2",
+  "schema_version": "public_doctrine_l1_index_v1",
+  "source_path": "tools/build_registry.py",
+  "status": "ACTIVE"
+}
+<<<END_PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
+
+<<<PUBLIC_DOCTRINE_L1_SOURCE_JSON>>>
+{
+  "source_embedded": false,
+  "source_path": "tools/build_registry.py",
+  "source_sha256": "77194c28951747c2b34fcb08d55f303767f307379aa91bf13d48152d1ffd9212",
+  "source_size_bytes": 1139,
+  "status": "ACTIVE"
+}
+<<<END_PUBLIC_DOCTRINE_L1_SOURCE_JSON>>>
+
+<<<PUBLIC_DOCTRINE_L1_BOUNDARY_JSON>>>
+{
+  "private_payload_included": false,
+  "projection_class": "public_safe_index",
+  "semantic_embedding_deferred": true,
+  "status": "ACTIVE"
+}
+<<<END_PUBLIC_DOCTRINE_L1_BOUNDARY_JSON>>>
+
+<<<PUBLIC_DOCTRINE_L1_DOCTOR_JSON>>>
+{
+  "required_certificate": "PUBLIC_DOCTRINE_L1_CERTIFICATE_JSON",
+  "required_sentinels": [
+    "PUBLIC_DOCTRINE_L1_MANIFEST_JSON",
+    "PUBLIC_DOCTRINE_L1_SOURCE_JSON",
+    "PUBLIC_DOCTRINE_L1_BOUNDARY_JSON",
+    "PUBLIC_DOCTRINE_L1_DOCTOR_JSON"
+  ],
+  "status": "ACTIVE"
+}
+<<<END_PUBLIC_DOCTRINE_L1_DOCTOR_JSON>>>
+
+<<<PUBLIC_DOCTRINE_L1_CERTIFICATE_JSON>>>
+{
+  "certificate_policy": "payload_sha256_excluding_this_certificate",
+  "companion_path": ".doctrine-index/tools__build_registry.py.doctrine",
+  "compiled_at_utc": "2026-05-01T00:17:36.357013Z",
+  "payload_sha256_excluding_this_certificate": "7bb565ca3394a36f5e8c52956991069e59c4917905ae458ca055be91696aca7d",
+  "source_path": "tools/build_registry.py",
+  "source_sha256": "77194c28951747c2b34fcb08d55f303767f307379aa91bf13d48152d1ffd9212",
+  "status": "ACTIVE"
+}
+<<<END_PUBLIC_DOCTRINE_L1_CERTIFICATE_JSON>>>

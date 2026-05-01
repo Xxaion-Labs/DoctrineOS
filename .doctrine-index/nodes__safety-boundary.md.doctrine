@@ -1,0 +1,92 @@
+DOCTRINE FILE
+version: 1.0.0
+body_id: public_doctrine_l1_d6399b740727566f
+schema_version: public_doctrine_l1_index_v1
+record_type: public_repo_file_companion
+source_path: nodes/safety-boundary.md
+source_sha256: d6399b740727566f868d80100a46fef83ce9c4c5527630354acff8828c4196d5
+projection_class: public_safe_index
+validation_state: generated_unverified
+
+# Public Doctrine L1 Companion — `nodes/safety-boundary.md`
+
+## Definition
+Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
+
+## Usage
+Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing private implementation payload.
+
+## ID
+public_doctrine_l1_d6399b740727566f
+
+## Claims supported
+
+```text
+source path recorded
+source SHA-256 recorded
+source file preserved in place
+public-safe L1 companion envelope generated
+```
+
+## Claims not supported
+
+```text
+semantic extraction complete
+private Xxen.soul payload present
+public release beyond repository contents approved
+```
+
+<<<PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
+{
+  "companion_path": ".doctrine-index/nodes__safety-boundary.md.doctrine",
+  "compiled_at_utc": "2026-05-01T00:17:36.348838Z",
+  "record_id": "public_doctrine_l1_d6399b740727566f",
+  "schema_version": "public_doctrine_l1_index_v1",
+  "source_path": "nodes/safety-boundary.md",
+  "status": "ACTIVE"
+}
+<<<END_PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
+
+<<<PUBLIC_DOCTRINE_L1_SOURCE_JSON>>>
+{
+  "source_embedded": false,
+  "source_path": "nodes/safety-boundary.md",
+  "source_sha256": "d6399b740727566f868d80100a46fef83ce9c4c5527630354acff8828c4196d5",
+  "source_size_bytes": 357,
+  "status": "ACTIVE"
+}
+<<<END_PUBLIC_DOCTRINE_L1_SOURCE_JSON>>>
+
+<<<PUBLIC_DOCTRINE_L1_BOUNDARY_JSON>>>
+{
+  "private_payload_included": false,
+  "projection_class": "public_safe_index",
+  "semantic_embedding_deferred": true,
+  "status": "ACTIVE"
+}
+<<<END_PUBLIC_DOCTRINE_L1_BOUNDARY_JSON>>>
+
+<<<PUBLIC_DOCTRINE_L1_DOCTOR_JSON>>>
+{
+  "required_certificate": "PUBLIC_DOCTRINE_L1_CERTIFICATE_JSON",
+  "required_sentinels": [
+    "PUBLIC_DOCTRINE_L1_MANIFEST_JSON",
+    "PUBLIC_DOCTRINE_L1_SOURCE_JSON",
+    "PUBLIC_DOCTRINE_L1_BOUNDARY_JSON",
+    "PUBLIC_DOCTRINE_L1_DOCTOR_JSON"
+  ],
+  "status": "ACTIVE"
+}
+<<<END_PUBLIC_DOCTRINE_L1_DOCTOR_JSON>>>
+
+<<<PUBLIC_DOCTRINE_L1_CERTIFICATE_JSON>>>
+{
+  "certificate_policy": "payload_sha256_excluding_this_certificate",
+  "companion_path": ".doctrine-index/nodes__safety-boundary.md.doctrine",
+  "compiled_at_utc": "2026-05-01T00:17:36.348838Z",
+  "payload_sha256_excluding_this_certificate": "d48491816aba47c6440bc3d0f735f92872a1e0d0d20f8624f74df47f34a19202",
+  "source_path": "nodes/safety-boundary.md",
+  "source_sha256": "d6399b740727566f868d80100a46fef83ce9c4c5527630354acff8828c4196d5",
+  "status": "ACTIVE"
+}
+<<<END_PUBLIC_DOCTRINE_L1_CERTIFICATE_JSON>>>
