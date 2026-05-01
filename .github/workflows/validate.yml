@@ -26,3 +26,25 @@ jobs:
 
       - name: Check registry
         run: python tools/check_registry.py
+
+      - name: Compile public Doctrine L1 index
+        run: python tools/doctrine_l1_index.py compile --apply
+
+      - name: Doctor public Doctrine L1 index
+        run: python tools/doctrine_l1_index.py doctor --write
+
+      - name: Verify public L1 doctor receipt green
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          receipt = json.loads(Path('public-evidence/PUBLIC_DOCTRINE_L1_DOCTOR.json').read_text())
+          if not receipt.get('ok'):
+              raise SystemExit(f"Public Doctrine L1 doctor not green: failures={receipt.get('failure_count')}")
+          print(json.dumps({
+              'ok': receipt.get('ok'),
+              'compiled_count': receipt.get('compiled_count'),
+              'ok_count': receipt.get('ok_count'),
+              'failure_count': receipt.get('failure_count')
+          }, indent=2))
+          PY
