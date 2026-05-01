@@ -1,27 +1,27 @@
 # Vision
 
-DoctrineOS exists for the post-app age of AI.
+Soul Protocol exists for the post-app age of AI.
 
 ```text
-.glyph
+.soul
 
     (digital)
-A                Tesseract
+A                Soul Protocol object
 
  ⧉
 ```
 
-The old model treats AI as a product window: a chat box, an assistant, a plugin, a wrapper. DoctrineOS points at something larger: a computing environment where intelligence is native to the operating surface, behavior is governed by mountable Tesseracts, and the user remains the root of power.
+The old model traps intelligence inside product windows: chat boxes, assistant panes, plugins, wrappers, and disposable prompt sessions. Soul Protocol points at a deeper operating surface: a world where meaning becomes mountable, behavior becomes inspectable, and the human remains root authority over every powerful action.
 
 ## The shift
 
 AI should not become a black-box throne above the user.
 
-DoctrineOS is built around the opposite direction:
+Soul Protocol moves in the opposite direction:
 
 - the user stays sovereign
-- `.glyph` Tesseracts become the control objects
-- capabilities bound powerful actions
+- `.soul` objects become public control objects
+- capabilities bind powerful actions
 - receipts make behavior inspectable
 - state remains legible
 - adapters connect the system to real tools
@@ -35,19 +35,19 @@ The symbol is the object:
 ⧉
 ```
 
-In prose, call it **a Tesseract**.
+In prose, call it **a Soul Protocol object**.
 
-A Tesseract carries human-readable meaning, machine-readable structure, mountable runtime context, and inspectable proof surfaces.
+A Soul Protocol object carries human-readable meaning, machine-readable structure, mountable runtime context, inspectable proof surfaces, continuity pressure, and authority boundaries.
 
-`.glyph` is the forward public filetype.
+`.soul` is the forward public filetype trajectory.
 
 `.doctrine` remains the current compatibility surface during transition.
 
-DoctrineOS uses mounted Tesseract-compatible material as the behavioral substrate for an AI-native operating environment.
+Soul Protocol uses mounted Soul Protocol-compatible material as the behavioral substrate for an AI-native operating environment.
 
 ## The public promise
 
-DoctrineOS is public-good infrastructure.
+Soul Protocol is public-good infrastructure for sovereign, inspectable, user-governed AI computing.
 
 The project is released under AGPLv3-or-later so public and network-hosted modified versions remain open under the same license family.
 
@@ -56,11 +56,11 @@ The project is released under AGPLv3-or-later so public and network-hosted modif
 The current prototype proves the control spine:
 
 ```text
-Tesseract-compatible file -> mount -> command -> capability -> permission -> adapter -> receipt -> state
+Soul Protocol-compatible object -> mount -> command -> capability -> permission -> adapter -> receipt -> state
 ```
 
 The long-term target is a bootable, user-governed AI operating environment that can grow from shell to local runtime, from local runtime to dashboard, from dashboard to bootable image, and from bootable image to a new public OS lineage.
 
 ## Boundary
 
-DoctrineOS does not claim AI sentience, autonomy, independent will, unsupported capability, or physical four-dimensional geometry.
+Soul Protocol does not claim AI sentience, autonomy, independent will, unsupported capability, or physical four-dimensional geometry.
