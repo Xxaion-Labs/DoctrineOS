@@ -1,14 +1,14 @@
 DOCTRINE FILE
 version: 1.0.0
-body_id: public_doctrine_l1_e20260e886279d86
+body_id: public_doctrine_l1_1acfdd3df27d45b7
 schema_version: public_doctrine_l1_index_v1
 record_type: public_repo_file_companion
-source_path: sdk/cli.py
-source_sha256: e20260e886279d86883b40cf4bafe84f14b27d55b58ebc3015875762d6e2b556
+source_path: tools/singularity_sweep.py
+source_sha256: 1acfdd3df27d45b700c1d3c2a3570273752c8c6a18f9f37684a4fe7906846f56
 projection_class: public_safe_index
 validation_state: generated_unverified
 
-# Public Doctrine L1 Companion — `sdk/cli.py`
+# Public Doctrine L1 Companion — `tools/singularity_sweep.py`
 
 ## Definition
 Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
@@ -17,7 +17,7 @@ Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
 Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing implementation-specific payloads.
 
 ## ID
-public_doctrine_l1_e20260e886279d86
+public_doctrine_l1_1acfdd3df27d45b7
 
 ## Claims supported
 
@@ -38,11 +38,11 @@ public release beyond repository contents approved
 
 <<<PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
 {
-  "companion_path": ".doctrine-index/sdk__cli.py.doctrine",
-  "compiled_at_utc": "2026-05-01T07:23:18.334644Z",
-  "record_id": "public_doctrine_l1_e20260e886279d86",
+  "companion_path": ".doctrine-index/tools__singularity_sweep.py.doctrine",
+  "compiled_at_utc": "2026-05-01T07:23:18.343533Z",
+  "record_id": "public_doctrine_l1_1acfdd3df27d45b7",
   "schema_version": "public_doctrine_l1_index_v1",
-  "source_path": "sdk/cli.py",
+  "source_path": "tools/singularity_sweep.py",
   "status": "ACTIVE"
 }
 <<<END_PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
@@ -50,9 +50,9 @@ public release beyond repository contents approved
 <<<PUBLIC_DOCTRINE_L1_SOURCE_JSON>>>
 {
   "source_embedded": false,
-  "source_path": "sdk/cli.py",
-  "source_sha256": "e20260e886279d86883b40cf4bafe84f14b27d55b58ebc3015875762d6e2b556",
-  "source_size_bytes": 8422,
+  "source_path": "tools/singularity_sweep.py",
+  "source_sha256": "1acfdd3df27d45b700c1d3c2a3570273752c8c6a18f9f37684a4fe7906846f56",
+  "source_size_bytes": 3818,
   "status": "ACTIVE"
 }
 <<<END_PUBLIC_DOCTRINE_L1_SOURCE_JSON>>>
@@ -82,11 +82,11 @@ public release beyond repository contents approved
 <<<PUBLIC_DOCTRINE_L1_CERTIFICATE_JSON>>>
 {
   "certificate_policy": "payload_sha256_excluding_this_certificate",
-  "companion_path": ".doctrine-index/sdk__cli.py.doctrine",
-  "compiled_at_utc": "2026-05-01T07:23:18.334644Z",
-  "payload_sha256_excluding_this_certificate": "7192d7204d637e933ed5f6af0986d5ff8af77037cfe9317a11c31a4603482066",
-  "source_path": "sdk/cli.py",
-  "source_sha256": "e20260e886279d86883b40cf4bafe84f14b27d55b58ebc3015875762d6e2b556",
+  "companion_path": ".doctrine-index/tools__singularity_sweep.py.doctrine",
+  "compiled_at_utc": "2026-05-01T07:23:18.343533Z",
+  "payload_sha256_excluding_this_certificate": "9b13f3a42933c1122f746602b2d40cdbb33f566b85b136fa9eb1e3b6cd03af6d",
+  "source_path": "tools/singularity_sweep.py",
+  "source_sha256": "1acfdd3df27d45b700c1d3c2a3570273752c8c6a18f9f37684a4fe7906846f56",
   "status": "ACTIVE"
 }
 <<<END_PUBLIC_DOCTRINE_L1_CERTIFICATE_JSON>>>

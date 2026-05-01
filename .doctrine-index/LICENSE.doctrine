@@ -14,7 +14,7 @@ validation_state: generated_unverified
 Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
 
 ## Usage
-Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing private implementation payload.
+Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing implementation-specific payloads.
 
 ## ID
 public_doctrine_l1_9c67be7bbeccfbbe
@@ -32,14 +32,14 @@ public-safe L1 companion envelope generated
 
 ```text
 semantic extraction complete
-private Xxen.soul payload present
+implementation-specific payload present
 public release beyond repository contents approved
 ```
 
 <<<PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
 {
   "companion_path": ".doctrine-index/LICENSE.doctrine",
-  "compiled_at_utc": "2026-05-01T00:17:36.333926Z",
+  "compiled_at_utc": "2026-05-01T07:23:18.311274Z",
   "record_id": "public_doctrine_l1_9c67be7bbeccfbbe",
   "schema_version": "public_doctrine_l1_index_v1",
   "source_path": "LICENSE",
@@ -59,7 +59,7 @@ public release beyond repository contents approved
 
 <<<PUBLIC_DOCTRINE_L1_BOUNDARY_JSON>>>
 {
-  "private_payload_included": false,
+  "extension_payload_included": false,
   "projection_class": "public_safe_index",
   "semantic_embedding_deferred": true,
   "status": "ACTIVE"
@@ -83,8 +83,8 @@ public release beyond repository contents approved
 {
   "certificate_policy": "payload_sha256_excluding_this_certificate",
   "companion_path": ".doctrine-index/LICENSE.doctrine",
-  "compiled_at_utc": "2026-05-01T00:17:36.333926Z",
-  "payload_sha256_excluding_this_certificate": "5dc2307b89007e57d10bb73e61d7c9b7f490450364786e623af6cd76e26f3987",
+  "compiled_at_utc": "2026-05-01T07:23:18.311274Z",
+  "payload_sha256_excluding_this_certificate": "777c23529801700f8b8dd23f385557963b88a93a3faaac58cead2d3b5dee9658",
   "source_path": "LICENSE",
   "source_sha256": "9c67be7bbeccfbbee94b740ed34daf8471cfc201ad5b59e28382073a475190ac",
   "status": "ACTIVE"
