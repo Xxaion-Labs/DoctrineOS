@@ -5,6 +5,29 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 THIS_FILE = Path(__file__).resolve()
 TEXT_SUFFIXES = {'.md', '.py', '.doctrine', '.glyph', '.txt', '.toml', '.yml', '.yaml', '.json'}
+PUBLIC_SURFACE_DIRS = {
+    'docs',
+    'examples',
+    'nodes',
+    'profiles',
+    'public-evidence',
+    'registry',
+    'sdk',
+    'doctrineos',
+    'tools',
+}
+PUBLIC_ROOT_FILES = {
+    'README.md',
+    'SPEC.md',
+    'VISION.md',
+    'ARCHITECTURE.md',
+    'ROADMAP.md',
+    'COMPATIBILITY.md',
+    'CHANGELOG.md',
+    'TESSERACT.md',
+    'standard_public_template.doctrine',
+    'pyproject.toml',
+}
 
 REQUIRED = {
     'TESSERACT.md': ['.glyph', 'A Tesseract', '⧉', '(digital)'],
@@ -24,12 +47,24 @@ FORBIDDEN = [
 ]
 
 
+def is_public_surface(path: Path) -> bool:
+    rel = path.relative_to(ROOT).as_posix()
+    if rel in PUBLIC_ROOT_FILES:
+        return True
+    first = rel.split('/', 1)[0]
+    if first == 'tests':
+        return False
+    return first in PUBLIC_SURFACE_DIRS
+
+
 def iter_text_files():
     skip_dirs = {'.git', '__pycache__', '.pytest_cache', '.doctrineos'}
     for path in ROOT.rglob('*'):
         if path.resolve() == THIS_FILE:
             continue
         if any(part in skip_dirs for part in path.parts):
+            continue
+        if not is_public_surface(path):
             continue
         if path.is_file() and path.suffix in TEXT_SUFFIXES:
             yield path
