@@ -26,6 +26,13 @@ def capture_stdout(fn, args):
     return rc, buffer.getvalue()
 
 
+def assert_no_private_project_terms(text: str):
+    forbidden = ["Xxen", ".soul", "soul", ".sol", " sol", "kernel", "private material", "private_", "proto-soul"]
+    lowered = text.lower()
+    for term in forbidden:
+        assert term.lower() not in lowered
+
+
 def test_valid_public_sentinel_parses():
     text = (ROOT / "examples" / "basic.doctrine").read_text(encoding="utf-8")
     diagnostics = DoctrineFiletypeParser.diagnostics(text)
@@ -74,7 +81,8 @@ def test_doctor_markdown_valid_fixture_is_readable():
     assert "## Proof boundaries" in out
     assert "What this proves" in out
     assert "What this does not prove" in out
-    assert "private Xxen" in out
+    assert "implementation-specific extension" in out
+    assert_no_private_project_terms(out)
 
 
 def test_inspect_markdown_valid_fixture_is_readable():
@@ -84,6 +92,7 @@ def test_inspect_markdown_valid_fixture_is_readable():
     assert "PASS" in out
     assert "PUBLIC_PROFILE_JSON" in out
     assert "## Next safe actions" in out
+    assert_no_private_project_terms(out)
 
 
 def test_doctor_markdown_malformed_sentinel_reports_fail():
@@ -108,3 +117,4 @@ A deliberately malformed public fixture.
     assert "json_parse_failed" in out
     assert "sentinel_diagnostics" in out
     assert "Repair the listed FAIL diagnostics" in out
+    assert_no_private_project_terms(out)
