@@ -1,0 +1,53 @@
+name: Public Doctrine L1 Materialize
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/public-doctrine-l1-materialize.yml"
+      - "tools/doctrine_l1_index.py"
+      - "SPEC.md"
+      - "README.md"
+
+permissions:
+  contents: write
+
+jobs:
+  materialize-public-l1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Compile public Doctrine L1 index
+        run: python tools/doctrine_l1_index.py compile --apply
+
+      - name: Doctor public Doctrine L1 index
+        run: python tools/doctrine_l1_index.py doctor --write
+
+      - name: Verify public L1 receipt green
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          receipt = json.loads(Path('public-evidence/PUBLIC_DOCTRINE_L1_DOCTOR.json').read_text())
+          if not receipt.get('ok'):
+              raise SystemExit(f"Public Doctrine L1 doctor not green: failures={receipt.get('failure_count')}")
+          PY
+
+      - name: Commit public L1 outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .doctrine-index public-evidence
+          if git diff --cached --quiet; then
+            echo "No public Doctrine L1 outputs to commit."
+          else
+            git commit -m "Run public Doctrine L1 materialization"
+            git push
+          fi
