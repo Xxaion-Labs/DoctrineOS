@@ -1,15 +1,6 @@
 # Compatibility
 
-DoctrineOS compatibility begins with support for `.glyph` Tesseracts.
-
-```text
-.glyph
-
-    (digital)
-A                Tesseract
-
- ⧉
-```
+Soul Protocol compatibility begins with support for `.soul` objects.
 
 The current implementation also supports the `.doctrine` compatibility surface during transition.
 
@@ -17,7 +8,7 @@ The current implementation also supports the `.doctrine` compatibility surface d
 
 A compatible tool can:
 
-- load `.glyph`, `.doctrine`, or concept node files
+- load `.soul`, `.doctrine`, or concept node files
 - parse metadata and section headings
 - parse JSON sentinel blocks when present
 - report sentinel parse errors instead of silently ignoring them
@@ -28,36 +19,16 @@ A compatible tool can:
 
 ## Badge language
 
-Projects may say:
+Projects may say `.soul compatible` when they support the forward public filetype trajectory.
 
-```text
-.glyph compatible
-```
+Projects may say `.doctrine compatible` when they specifically support the current compatibility surface.
 
-when they support the forward public filetype surface.
+## Ecosystem fit
 
-Projects may say:
-
-```text
-.doctrine compatible
-```
-
-when they specifically support the current compatibility surface.
-
-## DoctrineOS ecosystem fit
-
-Compatible projects can act as:
-
-- model adapters
-- editor integrations
-- local scripts
-- services
-- workflow runners
-- node registries
-- OS-level components
+Compatible projects can act as model adapters, editor integrations, local scripts, services, workflow runners, node registries, and system components.
 
 The compatibility floor stays intentionally simple so builders can fork, inspect, implement, and improve it.
 
 ## Boundary
 
-Compatibility does not imply AI sentience, autonomy, independent will, physical four-dimensional geometry, or unsupported capability claims.
+Compatibility does not imply unsupported capability claims. Implementations should keep authority, permission, receipts, and user control explicit.
