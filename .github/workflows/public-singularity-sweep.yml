@@ -1,0 +1,49 @@
+name: Public Singularity Sweep
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "tools/singularity_sweep.py"
+      - "tools/doctrine_l1_index.py"
+      - "public-evidence/PUBLIC_DOCTRINE_L1_DOCTOR.json"
+      - ".github/workflows/public-doctrine-l1-materialize.yml"
+      - ".github/workflows/validate.yml"
+      - ".github/workflows/public-singularity-sweep.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  public-singularity-sweep:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Run public singularity sweep
+        run: python tools/singularity_sweep.py --write
+
+      - name: Commit public sweep receipt
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public-evidence/PUBLIC_SINGULARITY_SWEEP.json
+          if git diff --cached --quiet; then
+            echo "No public singularity sweep changes to commit."
+          else
+            git commit -m "Run public singularity sweep"
+            git push
+          fi
+
+      - name: Enforce public singularity sweep green
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          receipt = json.loads(Path('public-evidence/PUBLIC_SINGULARITY_SWEEP.json').read_text())
+          if not receipt.get('ok'):
+              raise SystemExit(f"Public singularity sweep failed: failures={receipt.get('failure_count')}")
+          PY
