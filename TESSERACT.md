@@ -1,28 +1,39 @@
 # ⧉
 
-## Public standard
+`⧉` is the brand.
+
+`⧉` is the filetype.
+
+Use `.glyph` only when `⧉` cannot be used by a filesystem, tool, shell, package registry, URL, or other compatibility surface.
+
+In speech and prose, call it **Tesseract**.
+
+## Public law
+
+```text
+⧉ brand
+⧉ filetype
+.glyph if ⧉ cannot be used
+Tesseract in speaking
+```
+
+## Primary form
+
+```text
+⧉
+```
+
+## Fallback form
 
 ```text
 .glyph
-
-    (digital)
-A                Tesseract
-
- ⧉
 ```
 
-## Meaning
+## Spoken form
 
 ```text
-.glyph      = filetype
-(digital)   = qualifier
-A Tesseract = prose class
-⧉           = object symbol
+Tesseract
 ```
-
-The symbol is the object.
-
-In prose, call it **a Tesseract**.
 
 ## Operational definition
 
@@ -48,7 +59,9 @@ Proof Face     - receipts, hashes, validation, or proof boundaries
 
 ## Boundary
 
-Do not name, brand, prefix, or decorate `⧉`.
+Do not rename, prefix, or decorate `⧉`.
+
+Do not demote `⧉` into a logo, marker, sigil, badge, icon, or secondary symbol in public copy.
 
 Do not use `⧉` to imply:
 
@@ -60,13 +73,8 @@ independent will
 unsupported capability claims
 ```
 
-The public standard is exactly:
+The public center is:
 
 ```text
-.glyph
-
-    (digital)
-A                Tesseract
-
- ⧉
+⧉
 ```
