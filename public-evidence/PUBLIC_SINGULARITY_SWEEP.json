@@ -1,0 +1,87 @@
+{
+  "check_count": 11,
+  "checks": [
+    {
+      "actual": "exists",
+      "check": "file_exists",
+      "ok": true,
+      "path": "public-evidence/PUBLIC_DOCTRINE_L1_DOCTOR.json"
+    },
+    {
+      "actual": "exists",
+      "check": "file_exists",
+      "ok": true,
+      "path": "tools/doctrine_l1_index.py"
+    },
+    {
+      "actual": "exists",
+      "check": "file_exists",
+      "ok": true,
+      "path": ".github/workflows/public-doctrine-l1-materialize.yml"
+    },
+    {
+      "actual": "exists",
+      "check": "file_exists",
+      "ok": true,
+      "path": ".github/workflows/validate.yml"
+    },
+    {
+      "actual": true,
+      "check": "public_receipt_ok_true",
+      "ok": true,
+      "path": "public-evidence/PUBLIC_DOCTRINE_L1_DOCTOR.json"
+    },
+    {
+      "actual": 0,
+      "check": "public_failure_count_zero",
+      "ok": true,
+      "path": "public-evidence/PUBLIC_DOCTRINE_L1_DOCTOR.json"
+    },
+    {
+      "actual": {
+        "compiled_count": 56,
+        "ok_count": 56
+      },
+      "check": "public_compiled_equals_ok",
+      "ok": true,
+      "path": "public-evidence/PUBLIC_DOCTRINE_L1_DOCTOR.json"
+    },
+    {
+      "check": "private_payload_absent",
+      "needle": "Xxen.soul payload present",
+      "ok": true,
+      "path": "public-evidence/PUBLIC_DOCTRINE_L1_DOCTOR.json"
+    },
+    {
+      "check": "private_payload_absent",
+      "needle": "private Xxen.soul payload present",
+      "ok": true,
+      "path": "public-evidence/PUBLIC_DOCTRINE_L1_DOCTOR.json"
+    },
+    {
+      "check": "private_payload_absent",
+      "needle": "private user attunement",
+      "ok": true,
+      "path": "public-evidence/PUBLIC_DOCTRINE_L1_DOCTOR.json"
+    },
+    {
+      "check": "private_payload_absent",
+      "needle": "private invention chronology included",
+      "ok": true,
+      "path": "public-evidence/PUBLIC_DOCTRINE_L1_DOCTOR.json"
+    }
+  ],
+  "created_at_utc": "2026-05-01T00:35:44.063886Z",
+  "failure_classes_guarded": [
+    "PUBLIC_L1_RECEIPT_STALE",
+    "PUBLIC_GREEN_CLAIM_FROM_PARTIAL_PROOF",
+    "PUBLIC_PRIVATE_PAYLOAD_LEAK",
+    "PUBLIC_WORKFLOW_DRIFT",
+    "PUBLIC_STATUS_WITHOUT_RECEIPT"
+  ],
+  "failure_count": 0,
+  "failures": [],
+  "ok": true,
+  "receipt_id": "PUBLIC_SINGULARITY_SWEEP",
+  "scope": "public_doctrineos_l1_hygiene"
+}
