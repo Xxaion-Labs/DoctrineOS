@@ -1,6 +1,6 @@
 # Examples
 
-These examples show how mounted Doctrine Protocol context can be used inside DoctrineOS-compatible AI workflows.
+These examples show how mounted Soul Protocol compatibility context can be used inside AI workflows.
 
 ## Prompt context export
 
@@ -16,11 +16,7 @@ Writes mounted instruction context to `mounted_context.txt`.
 python examples/api_payload_adapter.py
 ```
 
-Builds a generic payload with:
-
-- mounted doctrine context as `system`
-- user message as `user`
-- doctrine ID and context hash in `metadata`
+Builds a generic payload with mounted context, user message, stable ID, and context hash metadata.
 
 ## Local model prompt
 
