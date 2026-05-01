@@ -1,14 +1,14 @@
 DOCTRINE FILE
 version: 1.0.0
-body_id: public_doctrine_l1_e0734745e18a81c3
+body_id: public_doctrine_l1_f6eef0c2c3751260
 schema_version: public_doctrine_l1_index_v1
 record_type: public_repo_file_companion
-source_path: doctrineos/adapters/stub.py
-source_sha256: e0734745e18a81c3004d15d19c6729780c4476f01c889978f52f2dc5ea73e58a
+source_path: TESSERACT.md
+source_sha256: f6eef0c2c3751260ffd5e088fe0da7f5d885a7d82e4a080234243435d59eab73
 projection_class: public_safe_index
 validation_state: generated_unverified
 
-# Public Doctrine L1 Companion — `doctrineos/adapters/stub.py`
+# Public Doctrine L1 Companion — `TESSERACT.md`
 
 ## Definition
 Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
@@ -17,7 +17,7 @@ Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
 Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing implementation-specific payloads.
 
 ## ID
-public_doctrine_l1_e0734745e18a81c3
+public_doctrine_l1_f6eef0c2c3751260
 
 ## Claims supported
 
@@ -38,11 +38,11 @@ public release beyond repository contents approved
 
 <<<PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
 {
-  "companion_path": ".doctrine-index/doctrineos__adapters__stub.py.doctrine",
-  "compiled_at_utc": "2026-05-01T11:39:47.399719Z",
-  "record_id": "public_doctrine_l1_e0734745e18a81c3",
+  "companion_path": ".doctrine-index/TESSERACT.md.doctrine",
+  "compiled_at_utc": "2026-05-01T11:39:47.396163Z",
+  "record_id": "public_doctrine_l1_f6eef0c2c3751260",
   "schema_version": "public_doctrine_l1_index_v1",
-  "source_path": "doctrineos/adapters/stub.py",
+  "source_path": "TESSERACT.md",
   "status": "ACTIVE"
 }
 <<<END_PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
@@ -50,9 +50,9 @@ public release beyond repository contents approved
 <<<PUBLIC_DOCTRINE_L1_SOURCE_JSON>>>
 {
   "source_embedded": false,
-  "source_path": "doctrineos/adapters/stub.py",
-  "source_sha256": "e0734745e18a81c3004d15d19c6729780c4476f01c889978f52f2dc5ea73e58a",
-  "source_size_bytes": 666,
+  "source_path": "TESSERACT.md",
+  "source_sha256": "f6eef0c2c3751260ffd5e088fe0da7f5d885a7d82e4a080234243435d59eab73",
+  "source_size_bytes": 911,
   "status": "ACTIVE"
 }
 <<<END_PUBLIC_DOCTRINE_L1_SOURCE_JSON>>>
@@ -82,11 +82,11 @@ public release beyond repository contents approved
 <<<PUBLIC_DOCTRINE_L1_CERTIFICATE_JSON>>>
 {
   "certificate_policy": "payload_sha256_excluding_this_certificate",
-  "companion_path": ".doctrine-index/doctrineos__adapters__stub.py.doctrine",
-  "compiled_at_utc": "2026-05-01T11:39:47.399719Z",
-  "payload_sha256_excluding_this_certificate": "917d143aedad629f376a09b0805d409df3ddbe771d292c6be0050a10be9a5b57",
-  "source_path": "doctrineos/adapters/stub.py",
-  "source_sha256": "e0734745e18a81c3004d15d19c6729780c4476f01c889978f52f2dc5ea73e58a",
+  "companion_path": ".doctrine-index/TESSERACT.md.doctrine",
+  "compiled_at_utc": "2026-05-01T11:39:47.396163Z",
+  "payload_sha256_excluding_this_certificate": "aae219cd961f29c637a6b3a6fac87a0eaaf511943762b0c04d7cfea7fb154e45",
+  "source_path": "TESSERACT.md",
+  "source_sha256": "f6eef0c2c3751260ffd5e088fe0da7f5d885a7d82e4a080234243435d59eab73",
   "status": "ACTIVE"
 }
 <<<END_PUBLIC_DOCTRINE_L1_CERTIFICATE_JSON>>>
