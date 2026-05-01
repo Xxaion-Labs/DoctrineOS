@@ -2,11 +2,18 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from sdk.cli import cmd_doctor, cmd_inspect
 from sdk.doctrine import Doctrine
 from sdk.filetype import DoctrineFiletypeParser
 
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+class Args:
+    def __init__(self, path: str, format: str = "json"):
+        self.path = path
+        self.format = format
 
 
 def test_valid_public_sentinel_parses():
@@ -46,3 +53,50 @@ def test_doctrine_mount_includes_filetype_diagnostics():
     assert receipt["mounted"] is True
     assert receipt["filetype_diagnostics"]["sentinel_count"] == 1
     assert receipt["filetype_diagnostics"]["sentinel_json_ok"] is True
+
+
+def test_doctor_markdown_valid_fixture_is_readable(capsys):
+    rc = cmd_doctor(Args(str(ROOT / "examples" / "basic.doctrine"), "markdown"))
+    out = capsys.readouterr().out
+    assert rc == 0
+    assert "# DoctrineOS Doctor Report" in out
+    assert "PASS" in out
+    assert "WARN" in out
+    assert "## Proof boundaries" in out
+    assert "What this proves" in out
+    assert "What this does not prove" in out
+    assert "private Xxen" in out
+
+
+def test_inspect_markdown_valid_fixture_is_readable(capsys):
+    rc = cmd_inspect(Args(str(ROOT / "examples" / "basic.doctrine"), "markdown"))
+    out = capsys.readouterr().out
+    assert rc == 0
+    assert "# DoctrineOS Inspect Report" in out
+    assert "PASS" in out
+    assert "PUBLIC_PROFILE_JSON" in out
+    assert "## Next safe actions" in out
+
+
+def test_doctor_markdown_malformed_sentinel_reports_fail(tmp_path, capsys):
+    bad = tmp_path / "bad.doctrine"
+    bad.write_text("""DOCTRINE FILE
+version: 1.0.0
+body_id: bad_public_fixture
+
+# Bad Public Fixture
+
+## Definition
+A deliberately malformed public fixture.
+
+<<<PUBLIC_PROFILE_JSON>>>
+{"status":"ACTIVE",,}
+<<<END_PUBLIC_PROFILE_JSON>>>
+""", encoding="utf-8")
+    rc = cmd_doctor(Args(str(bad), "markdown"))
+    out = capsys.readouterr().out
+    assert rc == 1
+    assert "FAIL" in out
+    assert "json_parse_failed" in out
+    assert "sentinel_diagnostics" in out
+    assert "Repair the listed FAIL diagnostics" in out
