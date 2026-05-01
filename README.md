@@ -2,23 +2,47 @@
 
 [![Validate DoctrineOS](https://github.com/Xxaion-Labs/DoctrineOS/actions/workflows/validate.yml/badge.svg)](https://github.com/Xxaion-Labs/DoctrineOS/actions/workflows/validate.yml)
 
-**DoctrineOS is an AGPL operating system prototype for the post-app age of AI: sovereign computing where intelligence is native, doctrine governs the machine, and the user remains the root of power.**
+```text
+⧉
+```
+
+**DoctrineOS is an AGPL operating system prototype for the post-app age of AI: sovereign computing where intelligence is native, behavior is governed by `.glyph` Tesseracts, and the user remains the root of power.**
 
 Version: 0.1.0 Prototype  
 License: AGPLv3-or-later
 
+## Public standard
+
+```text
+.glyph
+
+⧉
+
+A Tesseract
+```
+
+The symbol is the object.
+
+In prose, call it **a Tesseract**.
+
+A Tesseract is a semantic-machine object that can carry human-readable meaning, machine-readable structure, mountable runtime context, and inspectable proof surfaces.
+
+See [⧉](TESSERACT.md).
+
 ## What this is
 
-DoctrineOS is a public, doctrine-native AI operating system prototype.
+DoctrineOS is a public AI-native operating system prototype built around `.glyph` Tesseracts.
 
-It is not a chatbot, wrapper, plugin, desktop assistant, or agent demo. It is the beginning of a user-governed computing environment where AI is part of the operating layer itself and Doctrine Protocol supplies the behavioral control substrate.
+It is not a chatbot, wrapper, plugin, desktop assistant, or agent demo. It is the beginning of a user-governed computing environment where AI is part of the operating layer itself and `.glyph` supplies the forward public Tesseract filetype surface.
+
+`.doctrine` remains the current compatibility surface during transition.
 
 ## What it unlocks
 
 DoctrineOS moves AI from an app-shaped box into a governed operating surface:
 
 - the user remains root authority
-- doctrine profiles define operating behavior
+- `.glyph` Tesseracts define operating behavior
 - actions are capability-scoped
 - permissioned actions emit receipts
 - runtime state stays inspectable
@@ -29,8 +53,9 @@ DoctrineOS moves AI from an app-shaped box into a governed operating surface:
 
 DoctrineOS currently includes:
 
-- Doctrine Protocol SDK and CLI
-- `.doctrine` file loading, parsing, validation, and mounting
+- SDK and CLI support for `.doctrine` compatibility
+- public `.glyph` standard docs
+- `.doctrine` loading, parsing, validation, and mounting
 - mount receipts with context hashes
 - public concept nodes and generated node registry
 - adapter examples
@@ -43,7 +68,7 @@ DoctrineOS currently includes:
 
 The `doctrineos` command is the first runnable DoctrineOS control surface.
 
-It loads a doctrine profile, mounts it, plans command intent, identifies needed capabilities, asks for permission where required, routes approved commands to safe adapters, writes action receipts, and records runtime state.
+It loads a profile, mounts it, plans command intent, identifies needed capabilities, asks for permission where required, routes approved commands to safe adapters, writes action receipts, and records runtime state.
 
 ```bash
 doctrineos --json
@@ -61,7 +86,7 @@ cd DoctrineOS
 pip install -e .
 ```
 
-Mount the standard public doctrine:
+Mount the standard public compatibility file:
 
 ```bash
 doctrine mount standard_public_template.doctrine
@@ -98,12 +123,13 @@ print(receipt["instruction_context"])
 
 ## Project map
 
+- [⧉](TESSERACT.md) — public `.glyph` / Tesseract standard
 - [Vision](VISION.md) — why DoctrineOS exists
 - [Architecture](ARCHITECTURE.md) — system layers and control spine
 - [Roadmap](ROADMAP.md) — build path from prototype to public OS environment
 - [Prototype Shell](docs/prototype-shell.md) — runnable shell guide
-- [Doctrine Protocol Specification](SPEC.md) — `.doctrine` format and mount receipts
-- [Compatibility](COMPATIBILITY.md) — `.doctrine compatible` requirements
+- [Specification](SPEC.md) — `.glyph`, `.doctrine` compatibility, mounting, validation, and receipts
+- [Compatibility](COMPATIBILITY.md) — public compatibility requirements
 - [Examples](examples/README.md) — adapter and workflow examples
 - [Nodes](nodes/README.md) — public concept node library
 - [Changelog](CHANGELOG.md) — release history
@@ -111,10 +137,11 @@ print(receipt["instruction_context"])
 
 ## Repository structure
 
-- `standard_public_template.doctrine` — core public doctrine template
+- `TESSERACT.md` — public `.glyph` / `⧉` standard
+- `standard_public_template.doctrine` — core public compatibility template
 - `profiles/` — DoctrineOS profile examples
 - `doctrineos/` — DoctrineOS prototype shell and runtime
-- `sdk/` — Doctrine Protocol Python SDK
+- `sdk/` — Python SDK
 - `nodes/` — public concept nodes
 - `registry/` — generated public node registry
 - `examples/` — adapter and workflow examples
