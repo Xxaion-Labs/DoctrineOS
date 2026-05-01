@@ -1,10 +1,10 @@
 DOCTRINE FILE
 version: 1.0.0
-body_id: public_doctrine_l1_80ae440e00411728
+body_id: public_doctrine_l1_18021682c9cfdea2
 schema_version: public_doctrine_l1_index_v1
 record_type: public_repo_file_companion
 source_path: README.md
-source_sha256: 80ae440e004117280ae0e19efcb67e092cdc37b4282e14959d99210ed3aebb55
+source_sha256: 18021682c9cfdea2898ada9d5bff11392888a6c5a1dd0751f39c6369357eb04a
 projection_class: public_safe_index
 validation_state: generated_unverified
 
@@ -17,7 +17,7 @@ Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
 Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing implementation-specific payloads.
 
 ## ID
-public_doctrine_l1_80ae440e00411728
+public_doctrine_l1_18021682c9cfdea2
 
 ## Claims supported
 
@@ -39,8 +39,8 @@ public release beyond repository contents approved
 <<<PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
 {
   "companion_path": ".doctrine-index/README.md.doctrine",
-  "compiled_at_utc": "2026-05-01T07:23:18.312510Z",
-  "record_id": "public_doctrine_l1_80ae440e00411728",
+  "compiled_at_utc": "2026-05-01T11:47:00.322983Z",
+  "record_id": "public_doctrine_l1_18021682c9cfdea2",
   "schema_version": "public_doctrine_l1_index_v1",
   "source_path": "README.md",
   "status": "ACTIVE"
@@ -51,8 +51,8 @@ public release beyond repository contents approved
 {
   "source_embedded": false,
   "source_path": "README.md",
-  "source_sha256": "80ae440e004117280ae0e19efcb67e092cdc37b4282e14959d99210ed3aebb55",
-  "source_size_bytes": 4301,
+  "source_sha256": "18021682c9cfdea2898ada9d5bff11392888a6c5a1dd0751f39c6369357eb04a",
+  "source_size_bytes": 4917,
   "status": "ACTIVE"
 }
 <<<END_PUBLIC_DOCTRINE_L1_SOURCE_JSON>>>
@@ -83,10 +83,10 @@ public release beyond repository contents approved
 {
   "certificate_policy": "payload_sha256_excluding_this_certificate",
   "companion_path": ".doctrine-index/README.md.doctrine",
-  "compiled_at_utc": "2026-05-01T07:23:18.312510Z",
-  "payload_sha256_excluding_this_certificate": "ccac390d0a0abfab09b05cb4d41acb00544d2884253473ff469a3ef9d689f215",
+  "compiled_at_utc": "2026-05-01T11:47:00.322983Z",
+  "payload_sha256_excluding_this_certificate": "be030df8da851a556f6051257115e116ff83679397c3403fc4d7ee9095d6e242",
   "source_path": "README.md",
-  "source_sha256": "80ae440e004117280ae0e19efcb67e092cdc37b4282e14959d99210ed3aebb55",
+  "source_sha256": "18021682c9cfdea2898ada9d5bff11392888a6c5a1dd0751f39c6369357eb04a",
   "status": "ACTIVE"
 }
 <<<END_PUBLIC_DOCTRINE_L1_CERTIFICATE_JSON>>>
