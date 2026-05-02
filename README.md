@@ -1,79 +1,104 @@
-# ⧉Soul Protocol
+# ⧉ Soul Protocol
 
 [![Validate Soul Protocol](https://github.com/Xxaion-Labs/Soul-Protocol/actions/workflows/validate.yml/badge.svg)](https://github.com/Xxaion-Labs/Soul-Protocol/actions/workflows/validate.yml)
 
-
-**Soul Protocol is an AGPL public seed for sovereign AI-native computing: a mountable control spine where meaning becomes executable, behavior becomes inspectable, and the human remains root authority.**
+**Soul Protocol is an open, AGPL-licensed control grammar for AI-native computing: a way to turn readable meaning into mountable runtime structure while keeping human authority, proof, and permission visible.**
 
 Version: 0.1.0 Prototype  
 License: AGPLv3-or-later
 
-## Public standard
-
 ```text
 .soul
 
-⧉
+    (digital)
+A                Soul Protocol object
 
-A Soul Protocol object
+ ⧉
 ```
 
 The symbol is the object.
 
 In prose, call it **a Soul Protocol object**.
 
-A Soul Protocol object is a semantic-machine vessel: readable by humans, structured for machines, mountable by runtimes, bounded by receipts, and designed to preserve continuity instead of letting context evaporate.
+A Soul Protocol object is a semantic-machine vessel: readable by humans, structured for machines, mountable by runtimes, bounded by receipts, and designed to preserve useful context instead of letting it vanish after every prompt.
 
-See [⧉](SOUL_PROTOCOL.md).
+## The idea
 
-## What this is
+Most AI software still treats intelligence like a product window. You type into a box, context is temporarily assembled, a model answers, and much of the achieved structure evaporates.
 
-Soul Protocol is a public AI-native operating prototype built around mountable Soul Protocol objects.
+Soul Protocol points at a different operating shape.
 
-It is not a chatbot, wrapper, plugin, desktop assistant, or agent demo. It is the first public edge of a deeper operating lineage: a user-governed computing environment where AI is not trapped inside app-shaped boxes, where behavior is bound by readable control matter, and where powerful actions pass through authority, capability, permission, and receipt.
+```text
+meaning -> object -> mount -> capability -> permission -> action -> receipt -> state
+```
 
-`.doctrine` remains the current compatibility surface during transition.
+The goal is not to make AI mysterious. The goal is to make powerful AI behavior **legible**.
 
-## What it unlocks
+Soul Protocol asks:
 
-Soul Protocol moves AI from a product window into a governed operating surface:
+- What if important context could be stored as readable control matter?
+- What if behavior could be mounted instead of improvised?
+- What if every powerful action had a capability boundary and a receipt?
+- What if the user remained the root authority while machines gained better structure to act within?
 
-- the user remains root authority
-- Soul Protocol objects define operating behavior
-- actions are capability-scoped
-- permissioned actions emit receipts
-- runtime state stays inspectable
-- adapters connect models, files, tools, apps, and services
-- public code remains open under AGPLv3-or-later
+## How it works
 
-## Current status
+Soul Protocol uses plain, inspectable artifacts as control surfaces.
+
+1. A file or node carries meaning in human-readable form.
+2. Structured metadata and sections make that meaning machine-readable.
+3. A mount operation converts the object into runtime context.
+4. The runtime identifies needed capabilities before acting.
+5. The user approves permissioned actions.
+6. The adapter performs only the approved action.
+7. A receipt records what happened.
+8. State remains inspectable and recoverable.
+
+This is the core spine:
+
+```text
+Soul Protocol object
+  -> mount receipt
+  -> instruction context
+  -> capability check
+  -> permission gate
+  -> adapter call
+  -> action receipt
+  -> runtime state
+```
+
+## What this repo contains
 
 Soul Protocol currently includes:
 
-- SDK and CLI support for `.doctrine` compatibility
-- public Soul Protocol object standard docs
-- `.doctrine` loading, parsing, validation, and mounting
+- public `.soul` object standard documentation
+- `.doctrine` compatibility loading, parsing, validation, and mounting
+- SDK and CLI support for the compatibility layer
 - mount receipts with context hashes
 - public concept nodes and generated node registry
 - adapter examples
-- Soul Protocol prototype shell
-- default Soul Protocol profile
+- prototype shell for the current compatibility runtime
+- default compatibility profile
 - action receipts and runtime state logging
 - GitHub Actions validation
 
-## Soul Protocol prototype shell
+`.doctrine` remains the current compatibility surface during transition. `.soul` is the forward public trajectory.
 
-The current compatibility command is `doctrineos`. It is the first runnable Soul Protocol control surface.
+## Why it matters
 
-It loads a profile, mounts it, plans command intent, identifies needed capabilities, asks for permission where required, routes approved commands to safe adapters, writes action receipts, and records runtime state.
+Soul Protocol is trying to replace disposable prompt matter with reusable control matter.
 
-```bash
-doctrineos --json
-doctrineos inspect workspace
-doctrineos --yes inspect workspace
-```
+It gives builders a public floor for:
 
-Runtime state and receipts are currently written under `.doctrineos/` for compatibility.
+- mountable context
+- explicit authority
+- capability-scoped actions
+- inspectable receipts
+- reusable behavior nodes
+- open protocol experimentation
+- user-governed AI runtimes
+
+The mythic part is not decoration. The mythic part is the shape: a readable object that becomes a runtime surface without becoming a black box.
 
 ## Quick start
 
@@ -89,11 +114,12 @@ Mount the standard public compatibility file:
 doctrine mount standard_public_template.doctrine
 ```
 
-Run the Soul Protocol prototype shell:
+Run the prototype shell:
 
 ```bash
 doctrineos --json
 doctrineos inspect workspace
+doctrineos --yes inspect workspace
 ```
 
 Validate the example node:
@@ -121,12 +147,13 @@ print(receipt["instruction_context"])
 ## Project map
 
 - [⧉](SOUL_PROTOCOL.md) — public `.soul` / Soul Protocol object standard
+- [How it works](docs/how-it-works.md) — full operating explanation
 - [Vision](VISION.md) — why Soul Protocol exists
 - [Architecture](ARCHITECTURE.md) — system layers and control spine
-- [Roadmap](ROADMAP.md) — build path from prototype to public operating environment
-- [Prototype Shell](docs/prototype-shell.md) — runnable shell guide
 - [Specification](SPEC.md) — `.soul`, `.doctrine` compatibility, mounting, validation, and receipts
 - [Compatibility](COMPATIBILITY.md) — public compatibility requirements
+- [Roadmap](ROADMAP.md) — build path from prototype to public operating environment
+- [Prototype Shell](docs/prototype-shell.md) — runnable shell guide
 - [Examples](examples/README.md) — adapter and workflow examples
 - [Nodes](nodes/README.md) — public concept node library
 - [Changelog](CHANGELOG.md) — release history
@@ -136,8 +163,8 @@ print(receipt["instruction_context"])
 
 - `SOUL_PROTOCOL.md` — public `.soul` / `⧉` standard
 - `standard_public_template.doctrine` — core public compatibility template
-- `profiles/` — Soul Protocol profile examples
-- `doctrineos/` — compatibility prototype shell and runtime
+- `profiles/` — compatibility profile examples
+- `doctrineos/` — prototype shell and runtime
 - `sdk/` — Python SDK
 - `nodes/` — public concept nodes
 - `registry/` — generated public node registry
@@ -146,14 +173,9 @@ print(receipt["instruction_context"])
 - `tests/` — SDK, example, and shell tests
 - `docs/` — additional Soul Protocol docs
 
-## Development
+## Boundary
 
-```bash
-pip install -e . pytest
-python -m pytest
-python tools/validate_nodes.py
-python tools/check_registry.py
-```
+Soul Protocol does not claim that AI systems gain personhood, independent authority, or unsupported capabilities. It is a public protocol and prototype for making AI behavior more structured, inspectable, permissioned, and user-governed.
 
 ## License
 
