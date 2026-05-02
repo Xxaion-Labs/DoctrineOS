@@ -1,10 +1,10 @@
 DOCTRINE FILE
 version: 1.0.0
-body_id: public_doctrine_l1_d3dc64c6e57f3dba
+body_id: public_doctrine_l1_40edc0b2db389a7a
 schema_version: public_doctrine_l1_index_v1
 record_type: public_repo_file_companion
 source_path: VISION.md
-source_sha256: d3dc64c6e57f3dba8332fb5a0176eef73b46b17823f2f0928a5b8fdee333ec6b
+source_sha256: 40edc0b2db389a7ab291ace1a5a86d872905e7c8e711fa046ec497fb33873dbb
 projection_class: public_safe_index
 validation_state: generated_unverified
 
@@ -17,7 +17,7 @@ Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
 Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing implementation-specific payloads.
 
 ## ID
-public_doctrine_l1_d3dc64c6e57f3dba
+public_doctrine_l1_40edc0b2db389a7a
 
 ## Claims supported
 
@@ -39,8 +39,8 @@ public release beyond repository contents approved
 <<<PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
 {
   "companion_path": ".doctrine-index/VISION.md.doctrine",
-  "compiled_at_utc": "2026-05-02T04:16:11.737742Z",
-  "record_id": "public_doctrine_l1_d3dc64c6e57f3dba",
+  "compiled_at_utc": "2026-05-02T04:18:16.903091Z",
+  "record_id": "public_doctrine_l1_40edc0b2db389a7a",
   "schema_version": "public_doctrine_l1_index_v1",
   "source_path": "VISION.md",
   "status": "ACTIVE"
@@ -51,8 +51,8 @@ public release beyond repository contents approved
 {
   "source_embedded": false,
   "source_path": "VISION.md",
-  "source_sha256": "d3dc64c6e57f3dba8332fb5a0176eef73b46b17823f2f0928a5b8fdee333ec6b",
-  "source_size_bytes": 2946,
+  "source_sha256": "40edc0b2db389a7ab291ace1a5a86d872905e7c8e711fa046ec497fb33873dbb",
+  "source_size_bytes": 2892,
   "status": "ACTIVE"
 }
 <<<END_PUBLIC_DOCTRINE_L1_SOURCE_JSON>>>
@@ -83,10 +83,10 @@ public release beyond repository contents approved
 {
   "certificate_policy": "payload_sha256_excluding_this_certificate",
   "companion_path": ".doctrine-index/VISION.md.doctrine",
-  "compiled_at_utc": "2026-05-02T04:16:11.737742Z",
-  "payload_sha256_excluding_this_certificate": "54da719560d2ea38b158752808281d3bc29d6fc459fc99a864290968fa721ce6",
+  "compiled_at_utc": "2026-05-02T04:18:16.903091Z",
+  "payload_sha256_excluding_this_certificate": "2bb72e5c5bc4153fcee0d4b5147dbaf2e0d6e240af184369a27a7d0de431204a",
   "source_path": "VISION.md",
-  "source_sha256": "d3dc64c6e57f3dba8332fb5a0176eef73b46b17823f2f0928a5b8fdee333ec6b",
+  "source_sha256": "40edc0b2db389a7ab291ace1a5a86d872905e7c8e711fa046ec497fb33873dbb",
   "status": "ACTIVE"
 }
 <<<END_PUBLIC_DOCTRINE_L1_CERTIFICATE_JSON>>>

@@ -1,10 +1,10 @@
 DOCTRINE FILE
 version: 1.0.0
-body_id: public_doctrine_l1_bdde4b8472e1a686
+body_id: public_doctrine_l1_284b512ef622a7b1
 schema_version: public_doctrine_l1_index_v1
 record_type: public_repo_file_companion
 source_path: ROADMAP.md
-source_sha256: bdde4b8472e1a6865c69bcbb661710faf61cd5e0d68ed5f796fb1ccd2f500e65
+source_sha256: 284b512ef622a7b1d991c309ecf66b909525bfebf63ff688fd399951d6579de9
 projection_class: public_safe_index
 validation_state: generated_unverified
 
@@ -17,7 +17,7 @@ Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
 Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing implementation-specific payloads.
 
 ## ID
-public_doctrine_l1_bdde4b8472e1a686
+public_doctrine_l1_284b512ef622a7b1
 
 ## Claims supported
 
@@ -39,8 +39,8 @@ public release beyond repository contents approved
 <<<PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
 {
   "companion_path": ".doctrine-index/ROADMAP.md.doctrine",
-  "compiled_at_utc": "2026-05-02T04:16:11.735843Z",
-  "record_id": "public_doctrine_l1_bdde4b8472e1a686",
+  "compiled_at_utc": "2026-05-02T04:18:16.901310Z",
+  "record_id": "public_doctrine_l1_284b512ef622a7b1",
   "schema_version": "public_doctrine_l1_index_v1",
   "source_path": "ROADMAP.md",
   "status": "ACTIVE"
@@ -51,8 +51,8 @@ public release beyond repository contents approved
 {
   "source_embedded": false,
   "source_path": "ROADMAP.md",
-  "source_sha256": "bdde4b8472e1a6865c69bcbb661710faf61cd5e0d68ed5f796fb1ccd2f500e65",
-  "source_size_bytes": 3632,
+  "source_sha256": "284b512ef622a7b1d991c309ecf66b909525bfebf63ff688fd399951d6579de9",
+  "source_size_bytes": 3578,
   "status": "ACTIVE"
 }
 <<<END_PUBLIC_DOCTRINE_L1_SOURCE_JSON>>>
@@ -83,10 +83,10 @@ public release beyond repository contents approved
 {
   "certificate_policy": "payload_sha256_excluding_this_certificate",
   "companion_path": ".doctrine-index/ROADMAP.md.doctrine",
-  "compiled_at_utc": "2026-05-02T04:16:11.735843Z",
-  "payload_sha256_excluding_this_certificate": "e1b7651b261ca5687910662b31f9824d8dd052be59e08e001da909a0f5314aee",
+  "compiled_at_utc": "2026-05-02T04:18:16.901310Z",
+  "payload_sha256_excluding_this_certificate": "8e6d7c8f70e5b352d6d7ef2594a947b8b6378fea2759e99dd5afbf159ec76e1a",
   "source_path": "ROADMAP.md",
-  "source_sha256": "bdde4b8472e1a6865c69bcbb661710faf61cd5e0d68ed5f796fb1ccd2f500e65",
+  "source_sha256": "284b512ef622a7b1d991c309ecf66b909525bfebf63ff688fd399951d6579de9",
   "status": "ACTIVE"
 }
 <<<END_PUBLIC_DOCTRINE_L1_CERTIFICATE_JSON>>>

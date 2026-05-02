@@ -39,7 +39,7 @@ public release beyond repository contents approved
 <<<PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
 {
   "companion_path": ".doctrine-index/CONTRIBUTING.md.doctrine",
-  "compiled_at_utc": "2026-05-02T04:16:11.731111Z",
+  "compiled_at_utc": "2026-05-02T04:18:16.897152Z",
   "record_id": "public_doctrine_l1_64643e6ecc539b19",
   "schema_version": "public_doctrine_l1_index_v1",
   "source_path": "CONTRIBUTING.md",
@@ -83,8 +83,8 @@ public release beyond repository contents approved
 {
   "certificate_policy": "payload_sha256_excluding_this_certificate",
   "companion_path": ".doctrine-index/CONTRIBUTING.md.doctrine",
-  "compiled_at_utc": "2026-05-02T04:16:11.731111Z",
-  "payload_sha256_excluding_this_certificate": "213dcc1d90bd35cfcf4ab0ce620ee866698a13411f1c316e4732dccf0d9939fa",
+  "compiled_at_utc": "2026-05-02T04:18:16.897152Z",
+  "payload_sha256_excluding_this_certificate": "7e0c4edcb6e3096bee6f6779f85d885dfcd5114c01d5e120cdb40e93c77d8312",
   "source_path": "CONTRIBUTING.md",
   "source_sha256": "64643e6ecc539b193a44b09f48736e1f0a8c256c5c84d6f4de6bce7a587e5610",
   "status": "ACTIVE"
