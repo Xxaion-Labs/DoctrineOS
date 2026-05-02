@@ -10,10 +10,7 @@ License: AGPLv3-or-later
 ```text
 .soul
 
-    (digital)
-A                Soul Protocol object
-
- ⧉
+⧉
 ```
 
 The symbol is the object.
