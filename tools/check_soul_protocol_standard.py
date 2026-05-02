@@ -5,8 +5,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 REQUIRED = {
-    'SOUL_PROTOCOL.md': ['.soul', 'A Soul Protocol object', '⧉', '(digital)'],
-    'README.md': ['Soul Protocol', '.soul', 'A Soul Protocol object', '⧉'],
+    'SOUL_PROTOCOL.md': ['.soul', '⧉', 'A Soul Protocol object'],
+    'README.md': ['Soul Protocol', '.soul', '⧉', 'A Soul Protocol object'],
 }
 
 STALE_PUBLIC_TERMS = [
@@ -17,6 +17,7 @@ STALE_PUBLIC_TERMS = [
     'DoctrineOS exists',
     'DoctrineOS is',
     'DoctrineOS currently',
+    '(digital)',
 ]
 
 SCAN_FILES = [
