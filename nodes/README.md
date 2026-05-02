@@ -2,7 +2,17 @@
 
 Soul Protocol nodes are small reusable behavior units for Soul Protocol-compatible runtimes.
 
-Each node can be mounted alone or composed with other compatibility content.
+A node is a shard of control matter. It should be small enough to inspect, stable enough to reuse, and clear enough to mount without guesswork.
+
+Nodes let the system grow by composition instead of bloat.
+
+## How nodes work
+
+```text
+node -> mount -> instruction context -> behavior pressure
+```
+
+A node can define a principle, boundary, response style, workflow rule, or safety posture. It can be mounted alone or composed with other compatibility content.
 
 ## Node format
 
@@ -24,6 +34,8 @@ Minimal example.
 stable-node-id
 ```
 
+The format is intentionally simple. A node should be readable by a person before it is useful to a runtime.
+
 ## Current nodes
 
 - `anti-drift.md` — encourages consistency with the active mounted context
@@ -43,3 +55,7 @@ When adding or changing nodes, run:
 python tools/build_registry.py
 python tools/check_registry.py
 ```
+
+## Principle
+
+A good node is not a wall of doctrine. It is a precise control crystal: small surface, clear meaning, reusable effect.
