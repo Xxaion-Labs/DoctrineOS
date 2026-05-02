@@ -5,10 +5,7 @@ Soul Protocol is the public AI-native operating prototype built around `.soul` a
 ```text
 .soul
 
-    (digital)
-A                Soul Protocol object
-
- ⧉
+⧉
 ```
 
 The roadmap moves from a simple compatibility floor toward a user-governed operating environment where context is mountable, action is permissioned, and state is inspectable.
