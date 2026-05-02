@@ -32,11 +32,27 @@ A Soul Protocol object is a semantic-machine object that can carry human-readabl
 
 Soul Protocol is the public operating prototype for mounting and using these objects in a user-governed AI runtime.
 
+## Design thesis
+
+A normal text file can be read.
+
+A normal configuration file can be loaded.
+
+A Soul Protocol object is meant to be mounted.
+
+Mounting is the conversion of readable control matter into structured runtime context. The object remains inspectable by a human while becoming usable by machines.
+
 ## Current compatibility surface
 
 `.doctrine` remains the current compatibility surface during transition.
 
 A `.doctrine` file is plain UTF-8 text with a Markdown semantic layer and optional JSON sentinel blocks for machine-readable control material.
+
+The compatibility layer exists so the public mount spine can be tested now:
+
+```text
+file -> parser -> validation -> mount receipt -> instruction context
+```
 
 ## Operational faces
 
@@ -44,16 +60,20 @@ A Soul Protocol object has operational faces:
 
 ```text
 Semantic Face    - human-readable meaning
-Machine Face     - machine-readable structure
-Mount Face       - runtime context
-Proof Face       - receipts, hashes, validation, or proof boundaries
+Machine Face     - parser-readable structure
+Mount Face       - runtime context surface
+Proof Face       - receipts, hashes, validation, or evidence boundaries
 Continuity Face  - preserved structure for remount and reuse
 Authority Face   - user-governed limits on what the object may cause
 ```
 
+These faces are not separate identities. They are different readings of the same object.
+
 ## Concept node
 
 A concept node is a smaller reusable behavior unit that can be mounted alone or composed with other nodes.
+
+A node should be small enough to inspect and stable enough to reuse.
 
 ## Mounting
 
@@ -61,9 +81,20 @@ Mounting means converting a `.soul`, `.doctrine`, or concept node into structure
 
 A mount operation does not make an AI autonomous. It prepares instruction context that a user, model, adapter, or runtime can apply.
 
+A valid mount should preserve:
+
+- source identity
+- parsed structure
+- rendered instruction context
+- errors or warnings
+- stable IDs when present
+- context hash when available
+
 ## Mount receipt
 
 A mount receipt is the structured output of a mount operation. It provides a machine-readable record of what was mounted.
+
+The receipt is the hinge between object and runtime. It prevents the system from claiming invisible authority.
 
 ## Node format
 
@@ -167,3 +198,9 @@ A tool is compatible when it can:
 - Implementations should avoid implying AI sentience, autonomy, or independent will.
 - `⧉` should not be used to imply physical four-dimensional geometry.
 - The public surface should stay simple enough for people to fork, inspect, and improve.
+
+## One-line specification
+
+```text
+Soul Protocol turns readable control matter into mounted runtime context through validation, receipts, capabilities, permission, and recoverable state.
+```
